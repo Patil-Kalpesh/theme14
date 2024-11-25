@@ -1,0 +1,442 @@
+.close-menu {
+     display: none;
+}
+ .item-search + form {
+     display: none;
+}
+ .header-hide {
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     z-index: 9;
+     background-color: rgba(0, 0, 0, 0.4);
+     visibility: hidden;
+     opacity: 0;
+     -webkit-transition: visibility 0.3s ease, opacity 0.3s ease;
+     -moz-transition: visibility 0.3s ease, opacity 0.3s ease;
+     -ms-transition: visibility 0.3s ease, opacity 0.3s ease;
+     -o-transition: visibility 0.3s ease, opacity 0.3s ease;
+     transition: visibility 0.3s ease, opacity 0.3s ease;
+     cursor: pointer;
+}
+ .header-hide.active {
+     visibility: visible;
+     opacity: 1;
+}
+ .menu-mobile {
+     display: none;
+     position: absolute;
+    bottom: -20px;
+    right: 10px;
+
+     width: 40px;
+     height: 100px;
+     padding-left: 16px;
+     cursor: pointer;
+}
+ .menu-mobile .item {
+     position: absolute;
+     right: 0;
+     background-color: #ff5a2c;
+     width: 24px;
+     height: 2px;
+}
+ .menu-mobile .item-1 {
+     top: 44px;
+}
+ .menu-mobile .item-2 {
+     top: 52px;
+     width: 18px;
+     -webkit-transition: left 0.3s ease-in-out;
+     -moz-transition: left 0.3s ease-in-out;
+     -ms-transition: left 0.3s ease-in-out;
+     -o-transition: left 0.3s ease-in-out;
+     transition: left 0.3s ease-in-out;
+     right: 6px;
+}
+ .menu-mobile .item-3 {
+     top: 60px;
+}
+ .menu-mobile.active .item-2 {
+     right: 0;
+}
+ .mt30 {
+     margin-top: 30px;
+}
+ .pt30 {
+     padding-top: 30px;
+}
+ .sidebar {
+     padding-left: 10px;
+     margin-bottom: 120px;
+}
+ .col-md-pull-8 .sidebar {
+     padding-left: 0;
+     padding-right: 20px;
+}
+ .widget {
+     position: relative;
+     line-height: 1.8em;
+     margin-bottom: 50px;
+}
+ .widget .screen-reader-text {
+     display: none;
+}
+ .widget:last-child {
+     margin-bottom: 0;
+}
+ .widget .title {
+     margin-top: 0;
+     font-size: 18px;
+     text-transform: capitalize;
+}
+ .widget:after {
+     display: block;
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     height: 1px;
+     box-shadow: 0 0 3px rgba(0, 0, 0, 0.21);
+}
+ .widget .widget-content {
+     margin-top: 20px;
+}
+ .widget .widget-title {
+     font-size: 18px;
+     font-weight: 300;
+     position: relative;
+     letter-spacing: 2px;
+     text-transform: uppercase;
+     padding: 0;
+     margin-bottom: 30px;
+}
+ .widget .widget-title:before {
+     content: "";
+     display: block;
+     position: absolute;
+     top: 100%;
+     left: 0;
+     width: 100%;
+     height: 1px;
+     background-color: #eee;
+}
+ .widget .widget-title span {
+     position: relative;
+     display: inline-block;
+     padding: 0 0 15px;
+}
+ .widget .widget-title span:before {
+     content: "";
+     display: block;
+     position: absolute;
+     top: 100%;
+     left: 0;
+     width: 100%;
+     height: 1px;
+     background-color: #444;
+}
+ .widget .widget-title img {
+     width: auto;
+}
+ .widget img {
+     width: 100%;
+}
+ .widget ul {
+     list-style: none;
+     margin: 0;
+     padding: 0;
+}
+ .widget ul li {
+     padding-bottom: 5px;
+}
+ .widget ul li:last-child {
+     padding-bottom: 0;
+}
+ .widget label {
+     display: block;
+     margin-bottom: 10px;
+}
+ .widget select {
+     display: block;
+     width: 100%;
+}
+ .widget #wp-calendar {
+     width: 100%;
+}
+ .widget #wp-calendar caption {
+     text-align: right;
+     font-size: 12px;
+     margin-bottom: 15px;
+     padding-top: 0;
+     padding-bottom: 8px;
+}
+ .widget #wp-calendar thead {
+     font-size: 12px;
+}
+ .widget #wp-calendar thead th {
+     padding-bottom: 10px;
+     text-align: center;
+}
+ .widget #wp-calendar tfoot {
+     display: none;
+}
+ .widget #wp-calendar tfoot #prev {
+     font-size: 10px;
+     text-transform: uppercase;
+     padding-top: 10px;
+}
+ .widget #wp-calendar tr td {
+     border-left: 0;
+     padding: 10px;
+}
+ .widget #wp-calendar tbody td {
+     background: #fff;
+     border: 1px solid #fff;
+     text-align: center;
+     padding: 8px;
+}
+ .widget #wp-calendar #today a {
+     font-weight: 700;
+}
+ .widget .recentcomments .comment-author-link {
+     text-transform: capitalize;
+}
+ .widget .recentcomments a {
+     color: #181818;
+}
+ .widget .rsswidget {
+     color: #181818;
+}
+ .widget.widget_search .wrap-search {
+     position: relative;
+}
+ .widget.widget_search .search-field {
+     border-color: #181818;
+}
+ .widget.widget_search .search-submit {
+     font-family: 'FontAwesome';
+     position: absolute;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     background: #181818;
+     border: 1px solid transparent;
+     width: 50px;
+     display: inline-block;
+     color: #fff;
+}
+ .widget.widget_nav_menu ul ul {
+     padding-left: 15px;
+}
+ .widget.widget_tag_cloud .widget-title {
+     margin-bottom: 20px;
+}
+ .widget.widget_tag_cloud .tagcloud {
+     margin-left: -5px;
+     margin-bottom: -5px;
+}
+ .widget.widget_tag_cloud .tagcloud a {
+     display: inline-block;
+     border: none;
+     font-size: 11px !important;
+     padding: 10px 20px 8px;
+     margin-left: 5px;
+     margin-top: 10px;
+     letter-spacing: 1px;
+     background-color: #f2f2f2;
+     text-transform: uppercase;
+     line-height: 1.4em;
+     font-weight: 400;
+}
+ .widget.kd-about .title {
+     margin-bottom: 15px;
+}
+ .widget.kd-about .title span {
+     color: #181818;
+     font-size: 30px;
+}
+ .widget.kd-about .widget-follow-content a {
+     font-size: 14px;
+     margin-left: 8px;
+}
+ .widget.kd-about .widget-follow-content a:first-child {
+     margin-left: 0;
+}
+ .widget.kd-mailchimp {
+     background: #f0f0f0;
+     text-align: center;
+}
+ .widget.kd-mailchimp .widget-content {
+     padding: 30px 20px;
+     background: transparent;
+     font-size: 16px;
+     line-height: 1.4em;
+}
+ .widget.kd-mailchimp .description {
+     font-style: italic;
+     font-size: 14px;
+}
+ .widget.kd-mailchimp .kd-subscribe {
+     position: relative;
+     margin-top: 20px;
+}
+ .widget.kd-mailchimp input[type="email"] {
+     border: 1px solid transparent;
+     font-size: 14px;
+     display: block;
+     width: 100%;
+     height: 37px;
+     padding: 0 10px 0;
+     margin-bottom: 7px;
+     font-weight: 300;
+     background: white;
+     margin-top: 5px;
+}
+ .widget.kd-mailchimp input[type="submit"] {
+     margin-top: 10px;
+     width: 100%;
+     line-height: 40px;
+     text-transform: uppercase;
+     font-size: 11px;
+     letter-spacing: 1px;
+     padding: 2px 0 0;
+}
+ .widget.kd-mailchimp .subscribe-status {
+     margin: 0;
+}
+ .widget.kd-posts-list .item {
+     position: relative;
+     margin-bottom: 20px;
+}
+ .widget.kd-posts-list .image {
+     padding-bottom: 75%;
+}
+ .widget.kd-posts-list .image:after {
+     pointer-events: none;
+     content: '';
+     position: absolute;
+     top: 60%;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     z-index: 0;
+     background: -moz-linear-gradient(top, transparent 0, rgba(0, 0, 0, 0.7) 100%);
+     background: -webkit-gradient(linear, left top, left bottom, color-stop(0, transparent), color-stop(100%, rgba(0, 0, 0, 0.7)));
+     background: -webkit-linear-gradient(top, transparent 0, rgba(0, 0, 0, 0.7) 100%);
+     background: -o-linear-gradient(top, transparent 0, rgba(0, 0, 0, 0.7) 100%);
+     background: -ms-linear-gradient(top, transparent 0, rgba(0, 0, 0, 0.7) 100%);
+     background: linear-gradient(to bottom, transparent 0, rgba(0, 0, 0, 0.7) 100%);
+}
+ .widget.kd-posts-list .widget-item-content {
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     padding: 20px;
+     padding-bottom: 15px;
+}
+ .widget.kd-posts-list .title {
+     font-size: 14px;
+     color: #f6f6f6;
+     line-height: 1.2em;
+     text-transform: uppercase;
+     margin-bottom: 8px;
+}
+ .widget.kd-posts-list .post-details {
+     font-size: 11px;
+     color: #f6f6f6;
+}
+ .widget.kd-posts-list .post-details a {
+     color: inherit;
+}
+ .widget.kd-posts-list .post-details a:after {
+     color: inherit !important;
+}
+ .widget.kd-posts-list .post-details a.post-author {
+     display: none;
+}
+ .widget.kd-contact .item-field {
+     line-height: 30px;
+     margin-top: 10px;
+}
+ .widget.kd-contact .item-field i {
+     display: inline-block;
+     width: 30px;
+     height: 30px;
+     font-size: 20px;
+     color: #181818;
+}
+ .widget.kd-twitter .twitter-logo {
+     text-align: center;
+     font-size: 50px;
+     color: #181818;
+}
+ .widget.kd-twitter .owl-dots {
+     position: absolute;
+     top: 100%;
+     left: 0;
+     right: 0;
+     text-align: center;
+     -webkit-transform: translateY(-100%);
+     -moz-transform: translateY(-100%);
+     transform: translateY(-100%);
+     padding-bottom: 10px;
+     padding-top: 10px;
+}
+ .widget.kd-twitter .owl-dots .owl-dot {
+     display: inline-block;
+     width: 8px;
+     height: 8px;
+     margin-right: 10px;
+     border-radius: 50%;
+     border: 1px solid #181818;
+}
+ .widget.kd-twitter .owl-dots .owl-dot:last-child {
+     margin-right: 0;
+}
+ .widget.kd-twitter .owl-dots .owl-dot.active {
+     background: #181818;
+}
+ .widget.kd-images .kd-content {
+     margin-left: -4px;
+     margin-right: -4px;
+     text-align: center;
+}
+ .widget.kd-images .kd-content:after {
+     content: '';
+     display: block;
+     clear: both;
+}
+ .widget.kd-images .item {
+     float: left;
+     position: relative;
+     width: 33.333333%;
+     padding-top: 33.333333%;
+}
+ .widget.kd-images .item:hover img {
+     opacity: 0.8;
+}
+ .widget.kd-images .items-group:after {
+     content: '';
+     clear: both;
+     display: block;
+}
+ .widget.kd-images .items-group:first-child .item:first-child {
+     width: 66.666666%;
+     padding-top: 66.666666%;
+}
+ .widget.kd-images a {
+     overflow: hidden;
+     position: absolute;
+     display: block;
+     top: 3px;
+     left: 3px;
+     right: 3px;
+     bottom: 3px;
+}
+ .widget.kd-likebox {
+     overflow: hidden;
+}
+ 
